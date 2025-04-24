@@ -3500,7 +3500,7 @@
     </path>
 
     <path name="media-mic">
-        <path name="dev-main-mic" />
+        <path name="dev-dual-mic" />
         <path name="set-wdma1-16bit-2ch-pdsz2-config" />
         <path name="route-uaif0-to-wdma1" />
         <ctl name="ABOX VDSP4" value="wdma1-normal-capture" />
