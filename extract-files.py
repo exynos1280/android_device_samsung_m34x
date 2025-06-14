@@ -56,7 +56,7 @@ blob_fixups: blob_fixups_user_type = {
 } # fmt: skip
 
 module = ExtractUtilsModule(
-    'a25x',
+    'm34x',
     'samsung',
     namespace_imports=namespace_imports,
     add_firmware_proprietary_file=True,

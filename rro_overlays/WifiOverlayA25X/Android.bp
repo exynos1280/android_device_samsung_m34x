@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "WifiOverlayA25X",
-    theme: "WifiOverlayA25X",
-    vendor: true
-}

@@ -17,9 +17,9 @@
 include device/samsung/s5e8825-common/BoardConfigCommon.mk
 
 ## Inherit from the proprietary configuration
-include vendor/samsung/a25x/BoardConfigVendor.mk
+include vendor/samsung/m34x/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/a25x
+DEVICE_PATH := device/samsung/m34x
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop

@@ -91,4 +91,10 @@
         <item>1000</item> <!--item>sensorLocationY</item-->
         <item>350</item> <!--item>sensorRadius</item-->
     </array>
+
+    <!-- FP trustlet limits the number to 4. -->
+    <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
+
+    <!-- Indicates whether device has a power button fingerprint sensor. -->
+    <bool name="config_is_powerbutton_fps">true</bool>
 </resources>

@@ -16,5 +16,5 @@
 
 <resources>
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">Galaxy A25 5G</string>
+    <string name="def_device_name_simple">Galaxy M34 5G</string>
 </resources>

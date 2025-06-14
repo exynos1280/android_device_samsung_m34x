@@ -1,5 +1,5 @@
 ## Bluetooth
-bluetooth.device.default_name=Galaxy A25 5G
+bluetooth.device.default_name=Galaxy M34 5G
 
 ## Fingerprint
 ro.vendor.fingerprint.type=side

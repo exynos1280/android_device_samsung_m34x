@@ -18,12 +18,12 @@
 $(call inherit-product, device/samsung/s5e8825-common/common.mk)
 
 # Inherit proprietary files
-$(call inherit-product, vendor/samsung/a25x/a25x-vendor.mk)
+$(call inherit-product, vendor/samsung/m34x/m34x-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-DEVICE_PATH := device/samsung/a25x
+DEVICE_PATH := device/samsung/m34x
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -49,4 +49,4 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # WiFi
 PRODUCT_PACKAGES += \
-    WifiOverlayA25X
+    WifiOverlayM34X
