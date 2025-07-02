@@ -43,18 +43,10 @@ vendor/lib64/libexynoscamera3.so|f1defbda7228a3d6fbb5e1bf0e2c20180eed8f82|01f04d
 
 ## Fingerprint
 vendor/etc/init/init.fingerprint.rc
-vendor/lib/libqfp_sensortest.so
-vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
-vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib/libgf_in_system_lib.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
-vendor/lib64/libegis_fp_normal_sensor_test.so
-vendor/lib64/libgf_in_system_lib.so
-vendor/lib64/libqfp_sensortest.so
-vendor/lib64/libsynaFpSensorTestNwd.so
 
 ## Firmware
 vendor/firmware/setfile_hi1339.bin
