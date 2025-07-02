@@ -39,7 +39,7 @@ vendor/lib64/libsec2lsi_conversion.so
 vendor/lib64/libswlme.so
 
 # Patched camera HAL
-vendor/lib64/libexynoscamera3.so|f1defbda7228a3d6fbb5e1bf0e2c20180eed8f82|01f04d4597d3c8a38735be140eb0bbde6e9ed8d1
+vendor/lib64/libexynoscamera3.so|91f2571d146e171faae4853ce5e118175f9a8fb4|d375778a98ad36b4a2c026a705fdb7df2cfd5021
 
 ## Fingerprint
 vendor/etc/init/init.fingerprint.rc
