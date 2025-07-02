@@ -27,11 +27,8 @@ DEVICE_PATH := device/samsung/m34x
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/audio/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
-    $(DEVICE_PATH)/configs/audio/mixer_gains_rt5691.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains_rt5691.xml \
-    $(DEVICE_PATH)/configs/audio/mixer_gains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml \
-    $(DEVICE_PATH)/configs/audio/mixer_paths_rt5691.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_rt5691.xml \
-    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+    $(foreach file,$(wildcard $(DEVICE_PATH)/configs/audio/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
 
 # Nfc
 PRODUCT_COPY_FILES += \

@@ -1,5 +1,5 @@
 <mixer>
-  <!-- These paths are for a25x -->
+  <!-- These paths are for m34x -->
 
   <!-- Board Device Connections -->
   <!-- UAIF0 - CODEC for normal Playback and Capture -->
@@ -42,8 +42,6 @@
     <ctl name="ABOX SIFS5 Width" value="16" />
 
     <ctl name="ABOX SIFS0 Channel" value="2" />
-    <!-- SIFS0 channel switch should be configured for mono -->
-    <ctl name="ABOX SIFS0 CH0 Switch" value="0" />
 
     <!-- A-Box Default Configuration for UAIF -->
     <ctl name="ABOX UAIF0 Width" value="32" />
@@ -326,66 +324,17 @@
     <ctl name="SPK Profile" value="default" />
     <ctl name="SPK Active" id="0" value="0" /> <!-- id="0" : Bottom -->
     <ctl name="SPK Mute" id="0" value="0" />
-    <ctl name="SPK Active" id="1" value="0" /> <!-- id="1" : TOP -->
-    <ctl name="SPK Mute" id="1" value="0" />
 
-    <!-- For External Codec : ALC5665(RT5665) -->
-    <ctl name="DAC L1 Source" value="Stereo1 DAC Mixer" />
-    <ctl name="DAC R1 Source" value="Stereo1 DAC Mixer" />
-    <ctl name="DAC L2 Source" value="Mono DAC Mixer" />
-    <ctl name="DAC R2 Source" value="Mono DAC Mixer" />
-
-    <ctl name="Stereo1 DAC MIXL DAC L1 Switch" value="0" />
-    <ctl name="Stereo1 DAC MIXL DAC R1 Switch" value="0" />
-    <ctl name="Stereo1 DAC MIXL DAC L2 Switch" value="0" />
-    <ctl name="Stereo1 DAC MIXL DAC R2 Switch" value="0" />
-    <ctl name="Stereo1 DAC MIXR DAC R1 Switch" value="0" />
-    <ctl name="Stereo1 DAC MIXR DAC L1 Switch" value="0" />
-    <ctl name="Stereo1 DAC MIXR DAC L2 Switch" value="0" />
-    <ctl name="Stereo1 DAC MIXR DAC R2 Switch" value="0" />
-
-    <ctl name="Mono DAC MIXL DAC L1 Switch" value="0" />
-    <ctl name="Mono DAC MIXL DAC R1 Switch" value="0" />
-    <ctl name="Mono DAC MIXL DAC L2 Switch" value="0" />
-    <ctl name="Mono DAC MIXL DAC R2 Switch" value="0" />
-    <ctl name="Mono DAC MIXR DAC L1 Switch" value="0" />
-    <ctl name="Mono DAC MIXR DAC R1 Switch" value="0" />
-    <ctl name="Mono DAC MIXR DAC L2 Switch" value="0" />
-    <ctl name="Mono DAC MIXR DAC R2 Switch" value="0" />
-
-    <ctl name="RECMIX1L BST1 Switch" value="0" />
-    <ctl name="RECMIX1R BST1 Switch" value="0" />
-    <ctl name="RECMIX1L BST3 Switch" value="0" />
-    <ctl name="RECMIX1R BST3 Switch" value="0" />
-    <ctl name="RECMIX1L BST4 Switch" value="0" />
-    <ctl name="RECMIX1R BST4 Switch" value="0" />
-
+    <!-- For External Codec : ALC5691(RT5691) -->
     <ctl name="HEADPHONE Switch" value="0" />
+    <ctl name="RECEIVER Switch" value="0" />
 
-    <ctl name="DMIC1 Switch" value="0" />
-    <ctl name="DMIC2 Switch" value="0" />
+    <ctl name="MAINMIC Switch" value="0" />
+    <ctl name="SUBMIC Switch" value="0" />
     <ctl name="HEADSETMIC Switch" value="0" />
 
-    <ctl name="Mono Playback Switch" value="0" />
-    <ctl name="HPO Playback Switch" value="0" />
-
-    <ctl name="Mono MIX DAC L2 Switch" value="0" />
-
-    <ctl name="DAC L1 Mux" value="IF1 DAC1" />
-    <ctl name="DAC R1 Mux" value="IF1 DAC1" />
-    <ctl name="DAC1 MIXL DAC1 Switch" value="1" />
-    <ctl name="DAC1 MIXR DAC1 Switch" value="1" />
-
-    <ctl name="DAC L2 Mux" value="IF1 DAC2" />
-
-    <ctl name="Stereo1 ADC L Mux" value="ADC1 L" />
-    <ctl name="Stereo1 ADC R Mux" value="ADC1 R" />
-    <ctl name="Stereo1 ADC L1 Mux" value="ADC" />
-    <ctl name="Stereo1 ADC R1 Mux" value="ADC" />
-    <ctl name="Stereo1 ADC MIXL ADC1 Switch" value="1" />
-    <ctl name="Stereo1 ADC MIXR ADC1 Switch" value="1" />
-
     <ctl name="Disable NG2" value="1" />
+    <ctl name="DAC2 Mux" value="DAC2" />
 
     <!-- A-Box wakelock default released -->
     <ctl name="ABOX Wakelock" value="0" />
@@ -1783,60 +1732,49 @@
 
     <!-- Common CODEC configurations -->
     <path name="dev-handset">
-        <ctl name="SPK Profile" value="handset" />
-        <ctl name="SPK Active" id="0" value="0" />
-        <ctl name="SPK Active" id="1" value="1" />
+        <ctl name="Mono Playback Switch" value="1" />
+        <ctl name="RECEIVER Switch" value="1" />
     </path>
 
     <path name="dev-headset">
-        <ctl name="Stereo1 DAC MIXL DAC L1 Switch" value="1" />
-        <ctl name="Stereo1 DAC MIXR DAC R1 Switch" value="1" />
+        <ctl name="Stereo DAC MIXL DAC L1 Switch" value="1" />
+        <ctl name="Stereo DAC MIXR DAC R1 Switch" value="1" />
         <ctl name="HEADPHONE Switch" value="1" />
     </path>
 
     <!-- dev-speaker-{position} -->
     <path name="dev-speaker-bottom">
         <ctl name="SPK Active" id="0" value="1" />
-        <ctl name="SPK Active" id="1" value="0" />
     </path>
 
     <!-- dev-speaker-{position} -->
     <path name="dev-speaker-top">
-        <ctl name="SPK Active" id="0" value="0" />
-        <ctl name="SPK Active" id="1" value="1" />
     </path>
 
     <!-- dev-{combination}-speaker -->
     <path name="dev-dual-speaker">
         <ctl name="SPK Active" id="0" value="1" />
-        <ctl name="SPK Active" id="1" value="1" />
     </path>
 
     <path name="dev-fm_radio-input">
     </path>
 
     <path name="dev-main-mic">
-        <ctl name="RECMIX1L BST3 Switch" value="1" />
-        <ctl name="RECMIX1R BST3 Switch" value="1" />
-        <ctl name="Stereo1 ADC L Mux" value="ADC1 L" />
-        <ctl name="Stereo1 ADC R Mux" value="ADC1 R" />
-        <ctl name="Stereo1 ADC L1 Mux" value="ADC" />
-        <ctl name="Stereo1 ADC R1 Mux" value="ADC" />
+        <!-- A14x Changed -->
+        <ctl name="Stereo1 ADC L Mux" value="ADC2" />
+        <ctl name="Stereo1 ADC R Mux" value="ADC2" />
         <ctl name="Stereo1 ADC MIXL ADC1 Switch" value="1" />
         <ctl name="Stereo1 ADC MIXR ADC1 Switch" value="1" />
-        <ctl name="DMIC1 Switch" value="1" />
+        <ctl name="MAINMIC Switch" value="1" />
     </path>
 
     <path name="dev-2nd-mic">
-        <ctl name="RECMIX1L BST4 Switch" value="1" />
-        <ctl name="RECMIX1R BST4 Switch" value="1" />
-        <ctl name="Stereo1 ADC L Mux" value="ADC1 L" />
-        <ctl name="Stereo1 ADC R Mux" value="ADC1 R" />
-        <ctl name="Stereo1 ADC L1 Mux" value="ADC" />
-        <ctl name="Stereo1 ADC R1 Mux" value="ADC" />
+        <!-- A14x Changed -->
+        <ctl name="Stereo1 ADC L Mux" value="ADC3" />
+        <ctl name="Stereo1 ADC R Mux" value="ADC3" />
         <ctl name="Stereo1 ADC MIXL ADC1 Switch" value="1" />
         <ctl name="Stereo1 ADC MIXR ADC1 Switch" value="1" />
-        <ctl name="DMIC2 Switch" value="1" />
+        <ctl name="SUBMIC Switch" value="1" />
     </path>
 
     <path name="dev-3rd-mic">
@@ -1845,30 +1783,24 @@
 
     <!-- L ch: main-mic / R ch: 2nd-mic -->
     <path name="dev-dual-mic">
-        <ctl name="RECMIX1L BST3 Switch" value="1" />
-        <ctl name="RECMIX1R BST4 Switch" value="1" />
-        <ctl name="Stereo1 ADC L Mux" value="ADC1 L" />
-        <ctl name="Stereo1 ADC R Mux" value="ADC1 R" />
-        <ctl name="Stereo1 ADC L1 Mux" value="ADC" />
-        <ctl name="Stereo1 ADC R1 Mux" value="ADC" />
+        <!-- A14x Changed -->
+        <ctl name="Stereo1 ADC L Mux" value="ADC2" />
+        <ctl name="Stereo1 ADC R Mux" value="ADC3" />
         <ctl name="Stereo1 ADC MIXL ADC1 Switch" value="1" />
         <ctl name="Stereo1 ADC MIXR ADC1 Switch" value="1" />
-        <ctl name="DMIC1 Switch" value="1" />
-        <ctl name="DMIC2 Switch" value="1" />
+        <ctl name="MAINMIC Switch" value="1" />
+        <ctl name="SUBMIC Switch" value="1" />
     </path>
 
     <!-- L ch: 2nd-mic / R ch: main-mic -->
     <path name="dev-dual-invert-mic">
-        <ctl name="RECMIX1L BST4 Switch" value="1" />
-        <ctl name="RECMIX1R BST3 Switch" value="1" />
-        <ctl name="Stereo1 ADC L Mux" value="ADC1 L" />
-        <ctl name="Stereo1 ADC R Mux" value="ADC1 R" />
-        <ctl name="Stereo1 ADC L1 Mux" value="ADC" />
-        <ctl name="Stereo1 ADC R1 Mux" value="ADC" />
+        <!-- A14x Changed -->
+        <ctl name="Stereo1 ADC L Mux" value="ADC3" />
+        <ctl name="Stereo1 ADC R Mux" value="ADC2" />
         <ctl name="Stereo1 ADC MIXL ADC1 Switch" value="1" />
         <ctl name="Stereo1 ADC MIXR ADC1 Switch" value="1" />
-        <ctl name="DMIC1 Switch" value="1" />
-        <ctl name="DMIC2 Switch" value="1" />
+        <ctl name="MAINMIC Switch" value="1" />
+        <ctl name="SUBMIC Switch" value="1" />
     </path>
 
     <!-- 0 ch: main-mic, 1 ch: 2nd-mic, 2 ch: 3rd-mic, 3 ch: 4th-mic -->
@@ -1881,12 +1813,9 @@
     </path>
 
     <path name="dev-headset-mic">
-        <ctl name="RECMIX1L BST1 Switch" value="1" />
-        <ctl name="RECMIX1R BST1 Switch" value="1" />
-        <ctl name="Stereo1 ADC L Mux" value="ADC1 L" />
-        <ctl name="Stereo1 ADC R Mux" value="ADC1 R" />
-        <ctl name="Stereo1 ADC L1 Mux" value="ADC" />
-        <ctl name="Stereo1 ADC R1 Mux" value="ADC" />
+        <!-- A14x Changed -->
+        <ctl name="Stereo1 ADC L Mux" value="ADC1" />
+        <ctl name="Stereo1 ADC R Mux" value="ADC1" />
         <ctl name="Stereo1 ADC MIXL ADC1 Switch" value="1" />
         <ctl name="Stereo1 ADC MIXR ADC1 Switch" value="1" />
         <ctl name="HEADSETMIC Switch" value="1" />
@@ -1894,15 +1823,11 @@
 
     <!-- L ch: headset-mic / R ch: main-mic -->
     <path name="dev-headset-main-mic">
-        <ctl name="RECMIX1L BST3 Switch" value="1" />
-        <ctl name="RECMIX1L BST1 Switch" value="1" />
-        <ctl name="Stereo1 ADC L Mux" value="ADC1 L" />
-        <ctl name="Stereo1 ADC R Mux" value="ADC1 R" />
-        <ctl name="Stereo1 ADC L1 Mux" value="ADC" />
-        <ctl name="Stereo1 ADC R1 Mux" value="ADC" />
+        <ctl name="Stereo1 ADC L Mux" value="ADC1" />
+        <ctl name="Stereo1 ADC R Mux" value="ADC2" />
         <ctl name="Stereo1 ADC MIXL ADC1 Switch" value="1" />
         <ctl name="Stereo1 ADC MIXR ADC1 Switch" value="1" />
-        <ctl name="DMIC1 Switch" value="1" />
+        <ctl name="MAINMIC Switch" value="1" />
         <ctl name="HEADSETMIC Switch" value="1" />
     </path>
 
@@ -1953,24 +1878,18 @@
 
     <!-- Left Amp control -->
     <path name="upper-spk-amp-mute">
-        <ctl name="SPK Mute" id="0" value="0" />
-        <ctl name="SPK Mute" id="1" value="1" />
     </path>
 
     <path name="upper-spk-amp-unmute">
-        <ctl name="SPK Mute" id="0" value="0" />
-        <ctl name="SPK Mute" id="1" value="0" />
     </path>
 
     <!-- Amp mute control -->
     <path name="spk-amp-mute">
         <ctl name="SPK Mute" id="0" value="1" />
-        <ctl name="SPK Mute" id="1" value="1" />
     </path>
 
     <path name="spk-amp-unmute">
         <ctl name="SPK Mute" id="0" value="0" />
-        <ctl name="SPK Mute" id="1" value="0" />
     </path>
 
     <!-- Amp & codec mute control -->
@@ -1992,10 +1911,6 @@
         <ctl name="ABOX SIFS0 Channel" value="2" />
     </path>
 
-    <path name="set-sifs0-mono_channel_select">
-        <ctl name="ABOX SIFS0 CH0 Switch" value="1" />
-    </path>
-
     <path name="set-usbout-dualloop-rate">
         <ctl name="ABOX WDMA2 Rate" value="48000" />
     </path>
@@ -2012,11 +1927,7 @@
         <ctl name="ABOX WDMA2 Period" value="480" />
     </path>
 
-    <path name="set-callref-wdma-mono-channel">
-        <ctl name="ABOX WDMA0 Channel" value="1" />
-    </path>
-
-    <path name="route-normal-headset-playback">
+    <path name="route-normal-rcv-playback">
         <ctl name="ABOX SIFS0 Width" value="32" />
         <ctl name="ABOX SIFS0 Channel" value="2" />
         <path name="route-sifs0-to-uaif0" />
@@ -2038,10 +1949,10 @@
         <ctl name="ABOX VDSP1" value="speaker-ampprotection-playback" />
     </path>
 
-    <path name="route-normal-rcv-playback">
+    <path name="route-normal-headset-playback">
         <ctl name="ABOX SIFS0 Width" value="32" />
         <ctl name="ABOX SIFS0 Channel" value="2" />
-        <path name="route-sifs0-to-uaif1" />
+        <path name="route-sifs0-to-uaif0" />
         <path name="route-rdmas-to-sifs0" />
     </path>
 
@@ -2436,7 +2347,7 @@
       <path name="route-remote_mic-comp-pipeline" />
       <path name="media-headset" />
     </path>
-
+    
     <path name="remote_mic-comp-headphone">
        <path name="remote_mic-comp-headset" />
     </path>
@@ -2471,7 +2382,7 @@
         <path name="route-remote_mic-comp-pipeline" />
         <path name="media-headset" />
     </path>
-
+    
     <path name="remote_mic-headphone">
         <path name="remote_mic-headset" />
     </path>
@@ -2570,7 +2481,7 @@
     <path name="route-apcall-rcv-playback">
         <ctl name="ABOX SIFS0 Width" value="32" />
         <ctl name="ABOX SIFS0 Channel" value="2" />
-        <path name="route-sifs0-to-uaif1" />
+        <path name="route-sifs0-to-uaif0" />
         <path name="route-rdmas-to-sifs0" />
         <ctl name="ABOX VDSP0" value="bdmixer-apcall-rxse-callrec" />
     </path>
@@ -2601,7 +2512,6 @@
 
     <path name="communication-handset">
         <path name="dev-handset" />
-        <ctl name="SPK Profile" value="voip_rcv" />
         <path name="route-apcall-rcv-playback" />
     </path>
 
@@ -2921,7 +2831,6 @@
     <!-- Common VoiceCall paths -->
     <path name="incall-handset">
         <path name="dev-handset" />
-        <ctl name="SPK Profile" value="call_rcv" />
         <path name="route-normal-rcv-playback" />
         <path name="route-cpcall-rxse-callrec" />
     </path>
@@ -3079,7 +2988,6 @@
     <!-- VoiceCall CP FB -->
     <path name="incall_fb-handset">
         <path name="dev-handset" />
-        <ctl name="SPK Profile" value="call_rcv" />
         <path name="route-normal-rcv-playback" />
         <path name="route-fb-cpcall-rxse-callrec" />
     </path>
@@ -3534,15 +3442,13 @@
 
     <!-- AP TTY Mode -->
     <path name="ap_tty_mode-handset">
-        <path name="dev-handset" />
-        <ctl name="SPK Profile" value="voip_rcv" />
-        <path name="route-normal-rcv-playback" />
+        <path name="media-handset" />
     </path>
 
     <path name="ap_tty_mode-headset">
         <path name="media-headset" />
     </path>
-
+    
     <path name="ap_tty_mode-headphone">
         <path name="ap_tty_mode-headset" />
     </path>
@@ -3633,7 +3539,7 @@
     </path>
 
     <path name="media-headset-main-mic">
-        <path name="dev-headset-main-mic" />
+		<path name="dev-headset-main-mic" />
         <path name="set-wdma1-16bit-2ch-pdsz2-config" />
         <path name="route-uaif0-to-wdma1" />
         <ctl name="ABOX VDSP4" value="wdma1-normal-capture" />
