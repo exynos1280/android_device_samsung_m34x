@@ -1,5 +1,5 @@
 #
-# Copyright (C) The LineageOS Project
+# Copyright (C) The PixelOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,18 +17,21 @@
 # Inherit from m34x device
 $(call inherit-product, device/samsung/m34x/device.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixel stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := m34x
-PRODUCT_NAME := lineage_m34x
+PRODUCT_NAME := aosp_m34x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M346B2
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_SHIPPING_API_LEVEL := 34
 BOARD_SHIPPING_API_LEVEL := 33
 PRODUCT_CHARACTERISTICS := phone
+
+# Boot Animation
+TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="m34xjxx-user 15 AP3A.240905.015.A2 M346B2XUS8DYH1 release-keys" \
