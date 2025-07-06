@@ -28,10 +28,6 @@ blob_fixups: blob_fixups_user_type = {
 
     'vendor/lib64/libvkservice.so': blob_fixup()
         .binary_regex_replace(rb'ro\.factory\.factory_binary', b'ro.vendor.factory_binary\x00'),
-
-    'vendor/bin/hermesd': blob_fixup()
-        .binary_regex_replace(b'security.securehw.available', b'vendor.securehw.available\x00\x00'),
-
     (
         'vendor/bin/hw/android.hardware.security.keymint-service.samsung',
         'vendor/lib64/libskeymint10device.so',
