@@ -38,7 +38,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_SHIPPING_API_LEVEL := 34
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="m34xjxx-user 14 UP1A.231005.007 M346B2XUU7CXL1 release-keys" \
-    BuildFingerprint=samsung/m34xjxx/essi:14/UP1A.231005.007/M346B2XUU7CXL1:user/release-keys \
+    BuildDesc="m34xjxx-user 14 UP1A.231005.007 M346B2XUU7DYE1 release-keys" \
+    BuildFingerprint=samsung/m34xjxx/essi:14/UP1A.231005.007/M346B2XUU7DYE1:user/release-keys \
     DeviceProduct=m34xjxx \
     SystemName=m34xjxx
