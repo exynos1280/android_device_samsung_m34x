@@ -42,7 +42,6 @@ vendor/lib64/libswlme.so
 vendor/lib64/libexynoscamera3.so|91f2571d146e171faae4853ce5e118175f9a8fb4|d375778a98ad36b4a2c026a705fdb7df2cfd5021
 
 ## Fingerprint
-vendor/etc/init/init.fingerprint.rc
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
 vendor/lib64/libbauthserver.so
