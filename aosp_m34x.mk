@@ -43,4 +43,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=m34xjxx \
     SystemName=m34xjxx
 
-BUILD_FINGERPRINT := samsung/m34xjxx/essi:14/UP1A.231005.007/M346B2XUU7DYE1:user/release-keys
+BUILD_FINGERPRINT := samsung/m34xjxx/essi:15/AP3A.240905.015.A2/M346B2XUU7DYE1:user/release-keys
