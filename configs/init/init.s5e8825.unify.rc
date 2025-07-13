@@ -7,7 +7,7 @@ on early-init && property:ro.boot.em.model=SM-M346B
     mount none /vendor/firmware/SM-M346B/vts.bin /vendor/firmware/vts.bin bind
     mount none /vendor/firmware/SM-M346B/calliope_sram.bin /vendor/firmware/calliope_sram.bin bind
     # TEEgris
-    mount none /vendor/tee_SM-M346B /vendor/tee bind
+    mount none /vendor/tee/SM-M346B /vendor/tee bind
 
 # m34xjxx (tur_open)
 on early-init && property:ro.boot.em.model=SM-M346B2
@@ -18,4 +18,4 @@ on early-init && property:ro.boot.em.model=SM-M346B2
     mount none /vendor/firmware/SM-M346B2/vts.bin /vendor/firmware/vts.bin bind
     mount none /vendor/firmware/SM-M346B2/calliope_sram.bin /vendor/firmware/calliope_sram.bin bind
     # TEEgris
-    mount none /vendor/tee_SM-M346B2 /vendor/tee bind
+    mount none /vendor/tee/SM-M346B2 /vendor/tee bind
