@@ -6166,12 +6166,13 @@
     <!-- Input mixer settings -->
     <!-- Capture paths -->
     <path name="gain-media-mic">
-        <ctl name="IN2 Boost Volume" value="16" />
-        <ctl name="STO1 ADC Capture Volume" value="47 47" />
+        <ctl name="IN2 Boost Volume" value="55" />
+        <ctl name="IN3 Boost Volume" value="55" />
+        <ctl name="STO1 ADC Capture Volume" value="61 61" />
     </path>
 
     <path name="gain-media-2nd-mic">
-        <ctl name="IN3 Boost Volume" value="16" />
+        <ctl name="IN3 Boost Volume" value="34" />
         <ctl name="STO1 ADC Capture Volume" value="47 47" />
     </path>
 
@@ -6328,13 +6329,11 @@
 
     <!-- Recognition Input paths -->
     <path name="gain-recognition-mic">
-        <ctl name="IN2 Boost Volume" value="53" />
-        <ctl name="STO1 ADC Capture Volume" value="47 47" />
+        <path name="gain-media-mic" />
     </path>
 
     <path name="gain-recognition-2nd-mic">
-        <ctl name="IN3 Boost Volume" value="37" />
-        <ctl name="STO1 ADC Capture Volume" value="38 38" />
+        <path name="gain-media-2nd-mic" />
     </path>
 
     <path name="gain-recognition-headset-mic">
