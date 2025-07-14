@@ -30,8 +30,6 @@
   <!-- DEMUX3 : multi-mic (mic1,mic2,mic3,mic4 4ch) -->
   <!-- DEMUX4 : dual-mic (mic1 l, mic2 r) -->
 
-  <include name="/vendor/etc/mixer_gains.xml" />
-
   <!-- Initial Mixer control configurations -->
     <!-- A-Box Default Configuration for SIFS Width -->
     <ctl name="ABOX SIFS0 Width" value="24" />
