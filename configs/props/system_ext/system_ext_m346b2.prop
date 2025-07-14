@@ -1,0 +1,3 @@
+# Device - SM-M346B2 variant
+ro.product.system_ext.model=SM-M346B2
+ro.product.system_ext.name=m34xjxx

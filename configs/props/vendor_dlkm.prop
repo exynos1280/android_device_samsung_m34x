@@ -1,0 +1,2 @@
+# Import variant-specific properties
+import /vendor_dlkm/build_${ro.boot.em.model}.prop

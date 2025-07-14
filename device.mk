@@ -17,6 +17,21 @@
 # Inherit from the common tree
 $(call inherit-product, device/samsung/s5e8825-common/common.mk)
 
+# Variant props
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/props/system/system_m346b.prop:$(TARGET_COPY_OUT_SYSTEM)/build_SM-M346B.prop \
+    $(LOCAL_PATH)/configs/props/system/system_m346b2.prop:$(TARGET_COPY_OUT_SYSTEM)/build_SM-M346B2.prop \
+    $(LOCAL_PATH)/configs/props/vendor/vendor_m346b.prop:$(TARGET_COPY_OUT_VENDOR)/build_SM-M346B.prop \
+    $(LOCAL_PATH)/configs/props/vendor/vendor_m346b2.prop:$(TARGET_COPY_OUT_VENDOR)/build_SM-M346B2.prop \
+    $(LOCAL_PATH)/configs/props/vendor_dlkm/vendor_dlkm_m346b.prop:$(TARGET_COPY_OUT_VENDOR_DLKM)/build_SM-M346B.prop \
+    $(LOCAL_PATH)/configs/props/vendor_dlkm/vendor_dlkm_m346b2.prop:$(TARGET_COPY_OUT_VENDOR_DLKM)/build_SM-M346B2.prop \
+    $(LOCAL_PATH)/configs/props/odm/odm_m346b.prop:$(TARGET_COPY_OUT_ODM)/build_SM-M346B.prop \
+    $(LOCAL_PATH)/configs/props/odm/odm_m346b2.prop:$(TARGET_COPY_OUT_ODM)/build_SM-M346B2.prop \
+    $(LOCAL_PATH)/configs/props/product/product_m346b.prop:$(TARGET_COPY_OUT_PRODUCT)/build_SM-M346B.prop \
+    $(LOCAL_PATH)/configs/props/product/product_m346b2.prop:$(TARGET_COPY_OUT_PRODUCT)/build_SM-M346B2.prop \
+    $(LOCAL_PATH)/configs/props/system_ext/system_ext_m346b.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_SM-M346B.prop \
+    $(LOCAL_PATH)/configs/props/system_ext/system_ext_m346b2.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_SM-M346B2.prop
+
 # Inherit proprietary files
 $(call inherit-product, vendor/samsung/m34x/m34x-vendor.mk)
 

@@ -1,0 +1,3 @@
+# Device - SM-M346B2 variant
+ro.product.vendor_dlkm.model=SM-M346B2
+ro.product.vendor_dlkm.name=m34xjxx

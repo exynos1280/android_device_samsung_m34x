@@ -1,3 +1,6 @@
+# Import variant-specific properties
+import /vendor/build_${ro.boot.em.model}.prop
+
 ## Bluetooth
 bluetooth.device.default_name=Galaxy M34 5G
 
