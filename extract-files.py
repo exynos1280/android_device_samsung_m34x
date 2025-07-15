@@ -28,10 +28,8 @@ blob_fixups: blob_fixups_user_type = {
 
     'vendor/lib64/libvkservice.so': blob_fixup()
         .binary_regex_replace(rb'ro\.factory\.factory_binary', b'ro.vendor.factory_binary\x00'),
-    (
-        'vendor/lib64/libskeymint10device.so',
-        'vendor/lib64/libskeymint_cli.so',
-    ): blob_fixup()
+
+    'vendor/lib64/libskeymint_cli.so': blob_fixup()
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so',
             'android.hardware.security.keymint-V3-ndk.so')
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform',
