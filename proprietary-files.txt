@@ -1,30 +1,30 @@
 # Proprietary files - from Samsung package version M346B2XUU7DYE1, unless pinned
 
 # Audio Firmware
-vendor/firmware/a2dpcom.bin
-vendor/firmware/abox_tplg.bin
-vendor/firmware/abox_tplg.conf
-vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/APBargeIn_AUDIO_SLSI.bin
 vendor/firmware/APBiBF_AUDIO_SLSI.bin
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/APSV_AUDIO_SLSI.bin
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/SoundBoosterParam.bin
+vendor/firmware/a2dpcom.bin
+vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
 vendor/firmware/avsyncmix.bin
 vendor/firmware/bidirmic.bin
-vendor/firmware/SoundBoosterParam.bin
-vendor/firmware/sb_music.bin
 vendor/firmware/calliope_dram.bin
-vendor/firmware/volumemonitor.bin
 vendor/firmware/dolby.bin
 vendor/firmware/listenbackeffect.bin
+vendor/firmware/sb_music.bin
+vendor/firmware/volumemonitor.bin
 
 # Audio Firmware - from SM-M346B2
 vendor/firmware/calliope_sram.bin:vendor/firmware/SM-M346B2/calliope_sram.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-M346B2/vts.bin
 
 # Audio firmware - from SM-M346B - M346BXXU7DYE1
-vendor/firmware/calliope_sram.bin:vendor/firmware/SM-M346B/calliope_sram.bin|ecf934891f30bfd07952b0055d7453f71b27428e
 vendor/firmawre/vts.bin:vendor/firmware/SM-M346B/vts.bin|15b2b99fc813dec7231de2f74e4878578e7b26ae
+vendor/firmware/calliope_sram.bin:vendor/firmware/SM-M346B/calliope_sram.bin|ecf934891f30bfd07952b0055d7453f71b27428e
 
 ## Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
@@ -33,11 +33,11 @@ vendor/etc/wifi/mx140_bt.hcf
 vendor/lib64/hw/camera.s5e8825.so
 
 ## Camera dependencies
+vendor/lib64/libMERTA.so
 vendor/lib64/libexynoscamera_merta_plugin.so
 vendor/lib64/libexynoscamera_swlme_plugin.so
 vendor/lib64/libexynoscamera_vpl_plugin.so
 vendor/lib64/liblmecpu.so
-vendor/lib64/libMERTA.so
 vendor/lib64/libsec2lsi_conversion.so
 vendor/lib64/libswlme.so
 
@@ -49,47 +49,47 @@ vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
 
 ## Firmware
-vendor/firmware/setfile_hi1339.bin
-vendor/firmware/dual_cal_wide_swide.bin
-vendor/firmware/tfa9878.bin
-vendor/firmware/sectiongraph_tplg.conf
-vendor/firmware/setfile_gc02m2.bin
-vendor/firmware/setfile_gc5035.bin
-vendor/firmware/swcnr_SAK2L4.json
-vendor/firmware/setfile_jn1.bin
-vendor/firmware/sb_others.bin
-vendor/firmware/lmecpu_4HA.json
-vendor/firmware/gt9895_m34x.bin
-vendor/firmware/rxse.bin
 vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc
-vendor/firmware/abov/a96t396_m34x_main.bin
-vendor/firmware/txse1.bin
 vendor/firmware/OD_V2.3.7_02_05_VGA.nnc
 vendor/firmware/SetMultiCalInfo.bin
-vendor/firmware/lmecpu_JN1.json
-vendor/firmware/txse2.bin
-vendor/firmware/tfa98xx.cnt
-vendor/firmware/setfile_imx355.bin
-vendor/firmware/is_rta.bin
-vendor/firmware/setfile_gc02m1b.bin
-vendor/firmware/lmecpu_GC02M2.json
+vendor/firmware/abov/a96t396_m34x_main.bin
 vendor/firmware/dax_param.bin
-vendor/firmware/is_lib.bin
-vendor/firmware/secure_configuration.flm.cfg.bin
-vendor/firmware/sectiongraph_tplg.bin
-vendor/firmware/setfile_gc02m1.bin
-vendor/firmware/setfile_4ha.bin
 vendor/firmware/default_configuration.flm.cfg.bin
+vendor/firmware/dual_cal_wide_swide.bin
+vendor/firmware/gt9895_m34x.bin
+vendor/firmware/is_lib.bin
+vendor/firmware/is_rta.bin
+vendor/firmware/lmecpu_4HA.json
+vendor/firmware/lmecpu_GC02M2.json
 vendor/firmware/lmecpu_HI1339.json
+vendor/firmware/lmecpu_JN1.json
+vendor/firmware/rxse.bin
+vendor/firmware/sb_others.bin
+vendor/firmware/sectiongraph_tplg.bin
+vendor/firmware/sectiongraph_tplg.conf
+vendor/firmware/secure_configuration.flm.cfg.bin
+vendor/firmware/setfile_4ha.bin
+vendor/firmware/setfile_gc02m1.bin
+vendor/firmware/setfile_gc02m1b.bin
+vendor/firmware/setfile_gc02m2.bin
+vendor/firmware/setfile_gc5035.bin
+vendor/firmware/setfile_hi1339.bin
+vendor/firmware/setfile_imx355.bin
+vendor/firmware/setfile_jn1.bin
+vendor/firmware/swcnr_SAK2L4.json
+vendor/firmware/tfa9878.bin
+vendor/firmware/tfa98xx.cnt
+vendor/firmware/txse1.bin
+vendor/firmware/txse2.bin
 
 ## Firmware - from SM-M346B2
-vendor/firmware/mfc_fw.bin:vendor/firmware/SM-M346B2/mfc_fw.bin
 vendor/firmware/NPU.bin:vendor/firmware/SM-M346B2/NPU.bin
+vendor/firmware/mfc_fw.bin:vendor/firmware/SM-M346B2/mfc_fw.bin
 vendor/firmware/os.checked.bin:vendor/firmware/SM-M346B2/os.checked.bin
 
 ## Firmware - from SM-M346B - M346BXXU7DYE1
-vendor/firmware/mfc_fw.bin:vendor/firmware/SM-M346B/mfc_fw.bin|e6ff15701b80ee06760bba61105a7c02ffe574d2
 vendor/firmware/NPU.bin:vendor/firmware/SM-M346B/NPU.bin|d2e86e4295520142e18737fe836daa1f56806b06
+vendor/firmware/mfc_fw.bin:vendor/firmware/SM-M346B/mfc_fw.bin|e6ff15701b80ee06760bba61105a7c02ffe574d2
 vendor/firmware/os.checked.bin:vendor/firmware/SM-M346B/os.checked.bin|68c54a45a4ce4069d1a18daaf18dcf1ed91ea247
 
 # Keymint
@@ -140,11 +140,11 @@ vendor/tee/00000000-0000-0000-0000-657365636f6d:vendor/tee/SM-M346B2/00000000-00
 vendor/tee/00000000-0000-0000-0000-6b6e78677564:vendor/tee/SM-M346B2/00000000-0000-0000-0000-6b6e78677564
 vendor/tee/00000000-0000-0000-0000-6d706f667376:vendor/tee/SM-M346B2/00000000-0000-0000-0000-6d706f667376
 vendor/tee/00000000-0000-0000-0000-6d73745f5441:vendor/tee/SM-M346B2/00000000-0000-0000-0000-6d73745f5441
-vendor/tee/ffffffff-0000-0000-0000-000000000030:vendor/tee/SM-M346B2/ffffffff-0000-0000-0000-000000000030
 vendor/tee/driver/00000000-0000-0000-0000-494363447256:vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-494363447256
 vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374:vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-4d53546d7374
 vendor/tee/driver/00000000-0000-0000-0000-53626f786476:vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-53626f786476
 vendor/tee/driver/00000000-0000-0000-0000-564c544b4456:vendor/tee/SM-M346B2/driver/00000000-0000-0000-0000-564c544b4456
+vendor/tee/ffffffff-0000-0000-0000-000000000030:vendor/tee/SM-M346B2/ffffffff-0000-0000-0000-000000000030
 vendor/tee/tui/resolution_common/ID00000100:vendor/tee/SM-M346B2/tui/resolution_common/ID00000100
 
 ## TEEGRIS Firmware - from SM-M346B - M346BXXU7DYE1
@@ -177,20 +177,20 @@ vendor/tee/00000000-0000-0000-0000-657365636f6d:vendor/tee/SM-M346B/00000000-000
 vendor/tee/00000000-0000-0000-0000-6b6e78677564:vendor/tee/SM-M346B/00000000-0000-0000-0000-6b6e78677564|c5137452e522d370edb077fbceebe2005d14b413
 vendor/tee/00000000-0000-0000-0000-6d706f667376:vendor/tee/SM-M346B/00000000-0000-0000-0000-6d706f667376|c00af0fedc008dab069c70cce21a9c5a4e007070
 vendor/tee/00000000-0000-0000-0000-6d73745f5441:vendor/tee/SM-M346B/00000000-0000-0000-0000-6d73745f5441|e3b76e81a61ff6ff58e99391b66c77802be3478d
-vendor/tee/ffffffff-0000-0000-0000-000000000030:vendor/tee/SM-M346B/ffffffff-0000-0000-0000-000000000030|3cbe6ae0e314075fcbc6611208762222a4ace379
 vendor/tee/driver/00000000-0000-0000-0000-494363447256:vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-494363447256|9bffe3b5dbc77657912a552bc1b7f2ba0dd2dfad
 vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374:vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-4d53546d7374|9512cfdbf9ebd3b4b73edd13576d40b02c53da50
 vendor/tee/driver/00000000-0000-0000-0000-53626f786476:vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-53626f786476|0a2303aa1dbe558c1b515122272f139faa86efc0
 vendor/tee/driver/00000000-0000-0000-0000-564c544b4456:vendor/tee/SM-M346B/driver/00000000-0000-0000-0000-564c544b4456|52f45bd4de3d723e2a6ad5f17a3ce2bcd487d1e4
+vendor/tee/ffffffff-0000-0000-0000-000000000030:vendor/tee/SM-M346B/ffffffff-0000-0000-0000-000000000030|3cbe6ae0e314075fcbc6611208762222a4ace379
 vendor/tee/tui/resolution_common/ID00000100:vendor/tee/SM-M346B/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d7b8d
 
 ## VaultKeeper
 vendor/bin/vaultkeeperd
 vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
-vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/lib64/libstork_shared.so
 vendor/lib64/libvkservice.so
+vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 
 # Wi-Fi
 vendor/etc/wifi/mx140_common.hcf
