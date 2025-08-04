@@ -7,4 +7,4 @@ bluetooth.device.default_name=Galaxy M34 5G
 ## Fingerprint
 ro.vendor.fingerprint.type=side
 ro.vendor.fingerprint.supports_gestures=false
-ro.vendor.fingerprint.sensor_location=1080|820|350
+ro.vendor.fingerprint.sensor_location=1080|820|350|local:4633128672291735932
