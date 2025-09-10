@@ -1,10 +1,11 @@
 cc_prebuilt_binary {
     name: "RemovePackagesm34x",
     overrides: [
-        "AndroidAutoStubPrebuilt",
         "EmergencyInfoGoogleNoUi",
-        "Flipendo",
         "GoogleFeedback",
+        "KidsSupervisionStub",
+        "BetterBugStub",
+        "Tycho",
     ],
     strip: {
         none: true,
