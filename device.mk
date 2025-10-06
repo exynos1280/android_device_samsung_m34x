@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
     init.m34x.unify.rc
 
 # Nfc
-PRODUCT_PACKAGES += android.hardware.nfc@1.2-service.st
+PRODUCT_PACKAGES += android.hardware.nfc-service.st
 
 # Nfc - Configuration
 PRODUCT_PACKAGES += \
