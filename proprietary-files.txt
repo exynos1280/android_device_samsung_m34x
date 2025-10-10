@@ -28,6 +28,10 @@ vendor/firmware/SM-M346B/vts.bin|96e341d5dfa85fe49ef346e22bdd44a0fc11162d
 vendor/firmware/SM-M346B1/calliope_sram.bin|690578beb25ee80bc2515f9404eb051a00418bd1
 vendor/firmware/SM-M346B1/vts.bin|568003aef79419c2a6cad1250d675519f750a1cc
 
+# Audio - Firmware - Placeholders
+vendor/firmware/calliope_sram.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vts.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
+
 # Bluetooth - Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
@@ -99,6 +103,11 @@ vendor/firmware/SM-M346B/os.checked.bin|b2d7dbddeba725992d5c8ce3a1c8adc5de8d4f71
 vendor/firmware/SM-M346B1/NPU.bin|3fffa6c90d362b389d5120a6ae45c43f089789cc
 vendor/firmware/SM-M346B1/mfc_fw.bin|98b770d88d915f9fa5e48faaeb3d243280b5b804
 vendor/firmware/SM-M346B1/os.checked.bin|66e8cb97eaa7833c2759a43035aa9f7a5acf9191
+
+# Firmware - Placeholders
+vendor/firmware/NPU.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/mfc_fw.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/os.checked.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
 
 # Ramdisk - Firmware
 vendor/firmware/gt9895_m34x.bin:vendor_ramdisk/vendor/firmware/gt9895_m34x.bin
