@@ -26,6 +26,3 @@ TARGET_OTA_ASSERT_DEVICE := f34x,m34x
 
 # DTBO
 BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/m34x.cfg
-
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
